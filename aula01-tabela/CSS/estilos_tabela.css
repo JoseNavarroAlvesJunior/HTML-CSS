@@ -13,6 +13,7 @@ table {
     background: #000;
     color: #fff;
     text-align: left;
+    text-transform: uppercase;
     padding: 2%;
   }
   
@@ -20,16 +21,16 @@ table {
     padding: 10px;
   }
   
-  table thead td {
+  table tbody td {
     border-bottom: 1px solid #ddd;
   }
   
-  table tbody tr :hover {
+  table tbody tr:hover {
     background-color: yellow;
     cursor: crosshair;
   }
   
-  table tbody tr :nth-child(odd) {
-    background-color: #eee;
-  }
+.zebra{
+  background: #eee;
+}
   
