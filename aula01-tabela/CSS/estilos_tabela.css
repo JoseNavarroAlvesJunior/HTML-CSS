@@ -1,36 +1,50 @@
-table {
-    border-collapse: collapse;
+table { /*estilização da tabela ao todo */
+    border-collapse: collapse; /*define todas as bordas iguais*/
     -webkit-border-radius: 5px;
-    overflow: hidden;
-    border-radius: 5px;
-    width: 100%;
-    margin: 2% 0 2% 0;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    cursor: default;
+    overflow: hidden; /*define o comportamento se o texto não caber.. nesse caso ele é cortado*/
+    border-radius: 5px; /*arredonda as bordas da tabela*/
+    width: 100%; /*largura da tabela pegando toda a página exceto o espaçamento do padding e da margin*/
+    margin: 2% 0 2% 0; /* margem da tabela*/
+    text-align: center; /* centraliza os textos da tabela*/
+    font-family: sans-serif; /* fonte usada no site*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /*sombra envolta da tabela para dar efeito de profundidade*/
+    cursor: default;/* deixa o cursor no formato de seta*/
   }
   
-  table thead tr {
-    background: #000;
-    color: #fff;
-    text-align: left;
-    text-transform: uppercase;
+  table thead tr {  /* estilização do cabeçario da tabela */
+    background: #1d1b1b; /*muda a cor de fundo do cabeçario*/
+    color: #6036c4; /* muda a cor dos textos do cabeçario*/
+    text-align: left; /* deixa os textos a esquerda do cabeçario*/
+    text-transform: uppercase; /*deixa as letras maiusculas*/
     padding: 2%;
+    border: 2px solid gray; /*tamanho da bordar, formato e a cor */
   }
   
-  table tbody td,table thead th{
+  table tbody td,table thead th{ /*estilização o corpo e o cabeçario da tabela*/
     padding: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
   }
   
-  table tbody td {
-    border-bottom: 1px solid #ddd;
+  table tbody td { /* faz o arrendondamento da borda do corpo da tabela*/
+    border-radius: 5px;
+    border: 2px solid gray;
+    
   }
   
-  table tbody tr:hover {
-    background-color: yellow;
+  table tbody tr:hover { /* quando passar o mause por cima muda a cor */
+    background-color: powderblue;
     cursor: crosshair;
   }
   
-.zebra{
-  background: #eee;
+.zebra{ /*  muda a cor da linha da  tabela dando o efeito de zebra*/
+  background: #4d4b4b;
 }
-  
+
+.img{ /* centraliza a imagem na tabela */
+  padding: 0%; /*deixar sem espaçamento a imagem da borda*/
+  margin: 0;  /*margem para deixar sem espaço e colado na borda*/
+  width: 10%; /*largura*/
+  height: 10%; /*altura*/
+  object-fit: cover; /*dimensiona o conteudo para preencher a caixa de conteudoo*/
+}
