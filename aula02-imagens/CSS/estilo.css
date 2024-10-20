@@ -1,41 +1,45 @@
-* {
+* { /*seleciona todos os elementos, utilizado mais para zerar as margins e os padding*/
     margin: 0% ;
     padding: 0%;
   }
   
-  body{
-    background: #eee;
-    padding: 5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  body{/*estilização do corpo do site*/
+    background: #5a5858;  /*cor de fundo*/
+    font-family: sans-serif; /*fonte dos textos*/
+    border: 1px solid #222; /*tamanho, formato, cor da borda*/
   }
   
-  #corpo{
-    background: #fff;
-    border: 1px solid #999;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
-    margin: 0 auto;
+  #corpo{ /*estilização da (#) class=corpo*/
+    border: 1px solid #222; /*tamanho, formato, cor da borda*/
+    border-radius: 2px; /*arredondamento da borda*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1); /*sombra*/
   }
   
-  header{
-    background-color: #ccc;
+  header{ /*estilização do cabeçario*/
+    padding: 1%;
+    border-bottom: 1px solid red; /*tamanho, formato e cor da borda inferior*/
+    background: #222; /*cor de fundo */
+    border-radius: 2px;/*arredondamento da borda*/
+    font-size: 25px; /*tamanho da letra dos textos*/
+  }
+  
+  header h1, h2{ /*estilização dos titulos e subtitulos do cabeçario*/
+    text-align: center; /*centraliza os textos*/
+    color: yellow; /*cor dos textos*/
+    text-shadow: 1px 2px 2px #fff; /*sombra */
+    text-transform: uppercase; /*deixa o texto em maiusculo*/
+  }
+  
+  main{ /* estilização do conteudo principal*/
     padding: 2%;
-    border-bottom: 1px solid #999;
+    background-color: #5a5858; /*cor de fundo*/
   }
   
-  header h1{
-    text-align: center;
-    text-shadow: 1px 1px 2px #fff;
-    text-transform: uppercase;
-  }
-  
-  main{
+  footer{ /*estilização do rodape*/
+    background: #222; /*cor de fundo*/
+    text-align: center; /*centraliza os textos*/
+    color: yellow; /*cor dos textos*/
     padding: 2%;
-  }
-  
-  footer{
-    background: #ccc;
-    text-align: center;
-    padding: 2%;
-    border-top: 1px solid #999;
+    border-radius: 2px; /*arredondamento da borda*/
+    border-top: 1px solid red; /*tamanho, formato e cor da borda superior*/ 
   }

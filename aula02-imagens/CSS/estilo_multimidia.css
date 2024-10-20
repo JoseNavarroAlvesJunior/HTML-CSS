@@ -1,68 +1,73 @@
-#sobre-nos {
-    margin-top: 2%;
+#sobre-nos { /*estilizaçao da div sobre-nos*/ /* # puxa a class que você quer estilizar*/
+    margin-top: 2%;/*da um espaçamento acima do elemento*/
   }
   
-  #sobre-nos aside video {
-    max-width: 100%;
+  #sobre-nos aside video { /* estilização do video*/
+    max-width: 100%; /*estabele a largura máxima*/
+    border-radius: 2%;/*arrendondar a bordar para alinhar com a borda envolta do video*/ 
+    height: 100%;
   }
   
-  #sobre-nos aside,
-  #sobre-nos article {
-    background: #eee;
-    width: 42%;
-    float: left;
-    margin: 1%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    box-sizing: border-box;
+  #sobre-nos aside, #sobre-nos article { /* estilização do conteudos aside é do artigo*/
+    background: #5a4848; /*cor de fundo*/
+    width: 42%; /*largura */
+    float: left; /*ficar a esquerda*/
+    margin: 1%; /*margem*/  
+    border: 1px solid #e42323; /*tamanho daborda, formato e cor da borda*/
+    border-radius: 10px; /*arredondamento da borda*/
+    box-shadow: 1px 2px 1px rgba(233, 63, 63, 0.1);/*sombra*/
+    text-align: center; /*direcionar os ao meio textos(centralizar)*/
+    box-sizing: border-box; /*usada para calcular larguras (widths) e alturas (heights) dos elementos*/
   }
   
-  #sobre-nos article {
-    width: 54%;
-    text-align: left;
-    padding: 1%;
+  #sobre-nos article { /*estilização do artigo*/
+    width: 54%; /*largura*/
+    text-align: left; /*direcionar o texto a esquerda*/
+    padding: 1%; /*espaçamento interno*/
   }
   
-  #sobre-nos article p {
-    margin-bottom: 5%;
-    line-height: 25px;
+  #sobre-nos article p { /*estilização dos paragrafos do artigo*/
+    margin-bottom: 2%;  /*define a margin inferior do elemento de baixo */
+    line-height: normal; /*espaçamento entre as linhas*/
+    color: #e08080; /*cor dos textos*/
   }
   
-  article h3 {
-    text-transform: uppercase;
+  article h3{ /*titulo do artigo*/
+    text-transform: uppercase; /*transforma o texto em maiusculo*/
+    color: #e42323; /*cor dos textos*/
   }
   
-  #fotos {
-    overflow: hidden;
-    clear: both;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  #fotos { /*estilização das fotos*/
+    overflow: hidden; /*define o comportamento desejado quando o conteúdo não cabe na caixa */
+    clear: none; /* define se um elemento deve ser movido para baixo (limpo) dos elementos */
+    background-color: #5a4848; /*cor de fundo*/
+    border: 1px solid #e42323; /*tamanho, formato e cor da borda*/
+    border-radius: 10px; /*arredondamento da borda*/
+    display: flex; /*define se um elemento é tratado como um bloco ou caixa embutida e o layout */
+    justify-content: center; /* define como o navegador distribui o espaço entre e ao redor dos itens 
+    de conteúdo ao longo do eixo principal de um contêiner flexível*/
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); /*sombra da caixa*/
   }
   
-  figure {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    float: left;
-    padding: 5px;
-    max-width: 30%;
-    margin: 1%;
-    text-align: center;
+  figure { /*estilização das margens do enquadro*/
+    border: 1px solid #e08080; /*tamanho, formato e cor da borda*/
+    border-radius: 10px; /*arredondamento da borda*/
+    float: left; /*coloca um elemento no lado esquerdo ou direito de seu contêiner*/
+    padding: 3px; /*define a área de preenchimento em todos os quatro lados de um elemento de uma só vez.*/
+    margin: 1%; /*margin*/
   }
   
-  img {
-    max-width: 100%;
-    border-radius: 10px;
+  img { /*estilização das imagens*/
+    max-width: 100%; /*largura total*/
+    border-radius: 10px;/* arredondamento da imagem*/
   }
   
-  figcaption {
-    background-color: #222;
-    border-radius: 10px;
-    color: #fff;
-    padding: 3px;
-    text-align: center;
+  figcaption { /*estilização dos textos das imagens*/
+    background-color: #222;  /*cor de fundo*/
+    border-radius: 10px; /*arredondamento das bordas*/
+    border: 1px solid #e42323; /*tamanho, formato e cor da borda*/
+    color: #e42323; /*cor dos textos*/
+    padding: 3px; 
+    text-align: center; /*alinha os textos no centro*/
   }
   
