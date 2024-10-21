@@ -1,42 +1,46 @@
-* {
-    margin: 0%;
-    padding: 0%;
+* {                         /*USADO para formatar todos os elementos do site*/
+    margin: 0%;             /*espeçamento externo entre os elementos*/
+    padding: 0%;            /*espaçamento interno entre os elementos*/
   }
   
-  body {
-    background: #eee;
-    padding: 5%;
-    font-family: 'Trebuchet MS';
+  body {                          /*estilização do corpo do site*/
+    background: #110213;        /*cor de fundo fora do corpo do site*/
+    padding: 8%;                  /*espaçamento interno entre os elementos*/
+    font-family: 'Trebuchet MS';  /*fonte do texto*/
   }
   
-  #corpo {
-    background: #fff;
-    border: 1px solid #999;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
+  #corpo {                                             /*# puxa o <div class="corpo"> do html*/
+    background: #fff;                                /*cor de fundo do corpo do site*/
+    border: 1px solid #a818a1;                       /*tamanho, formato e cor da borda do corpo do site*/
+    border-radius: 5px;                               /*arredondamento da borda*/
+    box-shadow: 10px 10px 10px  rgba(250, 45, 202, 0.3);     /*sombra*/
+    margin: 0 auto; /*margim externa entre os elementos*/
   }
   
   header {
-    background-color: #ccc;
-    padding: 2%;
-    border-bottom: 1px solid #999;
+    background-color: #a818a1; /*cor do fundp*/
+    padding: 2%;                  /*espaçamento interno entre os elementos*/
+    border-bottom: 1px solid #222; /*tamanho, formato e cor da borda inferior*/
   }
   
-  header h1, h2{
-    text-align: center;
-    text-shadow: 1px 1px 2px #fff;
-    text-transform: uppercase;
+  header h1{
+    text-align: center; /*centraliza o texto*/
+    color: #222; /*cor do texto*/
+    text-shadow: 2px 2px 2px #a818a1; /*sombra*/
+    text-transform: uppercase; /*texto todo em maiusculo*/
+  }
+  h2{
+    margin-left: 15%; /*espaçamento externo da esquerda*/
   }
   
   main {
-    padding: 2%;
+    padding: 2%; /*espaçamento interno entre os elementos*/
   }
   
   footer {
-    background: #ccc;
-    text-align: center;
-    padding: 2%;
-    border-top: 1px solid #999;
+    background: #a818a1; /*cor de fundo*/
+    text-align: center; /*centraliza o texto*/
+    padding: 2%; /*espaçamento interno entre os elementos*/
+    border-top: 1px solid #222; /*tamanho, formato e cor da borda superior*/
   }
   

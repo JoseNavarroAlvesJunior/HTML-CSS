@@ -1,78 +1,108 @@
+/* Estilos para fieldset */
 fieldset {
-    padding: 1%;
-    border-radius: 10px;
-    background: #eee;
-    border: 1px solid #ddd;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
-    margin-top: 2%;
-  }
-  
-  legend{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: #eee;
-    padding: .5%;
-    border: 1px solid #ddd;
-    border-radius: 10 px;
-  }
-  
-  label, input, select{
-    display: block; box-sizing: border-box;
-  }
-  
-  label{
-    padding: 5px;
-  }
- 
-  .label-50-center {
-    margin:0 0px 0 0;
-    vertical-align: middle;
-    position: relative;
-    float: left;
-    width: 20%;
-    top: 5px;
-  }
+  padding: 1%; /* Adiciona um padding interno de 1% */
+  border-radius: 10px; /* Arredonda os cantos do fieldset */
+  background: #eee; /* Define um fundo cinza claro */
+  border: 1px solid #ddd; /* Adiciona uma borda cinza clara */
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .1); /* Adiciona uma sombra suave ao redor */
+  margin-top: 2%; /* Adiciona uma margem superior de 2% */
+}
 
-  input, select{
-    width: 100%; border: 1px outset; padding: 10px;
-  }
-  
-  input:focus{
-    background: lightyellow; border: 1px solid yellow; outline: none;
-  }
-  
-  .label-50{
-    width: 50%; float: left;
-  }
-  
-  .center{
-    text-align: center; padding: 2%;
-  }
-  
-  button {
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    background: #eee;
-    border: 1px solid #666;
-  }
-  
-  button:hover{background-color: #ddd;}
-  button:active{background-color: #666;}
-  
-  .botao-enviar{background-color: greenyellow;}
+/* Estilos para o elemento legend */
+legend {
+  text-align: center; /* Centraliza o texto dentro do legend */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  font-weight: bold; /* Define o texto como negrito */
+  background: #eee; /* Define um fundo cinza claro */
+  padding: .5%; /* Adiciona um padding interno de 0.5% */
+  border: 1px solid #ddd; /* Adiciona uma borda cinza clara */
+  border-radius: 10px; /* Arredonda os cantos do legend */
+}
 
- header, h1{
-  text-align: center;
-  font-family: sans-serif;
- } 
+/* Estilos para labels, inputs e selects */
+label, input, select {
+  display: block; /* Faz com que cada elemento ocupe toda a largura disponível */
+  box-sizing: border-box; /* Inclui padding e borda nas dimensões do elemento */
+}
 
- #cadastro_texto{
-  text-align: center;
-  font-family: sans-serif;
- }
+/* Estilos específicos para labels */
+label {
+  padding: 5px; /* Adiciona um padding interno de 5px */
+}
 
- body{
-  background-color: #F3F7F6;
- }
+/* Classe para labels com largura de 20% */
+.label-50-center {
+  margin: 0; /* Remove margens */
+  vertical-align: middle; /* Alinha verticalmente ao centro */
+  position: relative; /* Define a posição como relativa */
+  float: left; /* Permite que o elemento flutue à esquerda */
+  width: 20%; /* Define a largura como 20% */
+  top: 5px; /* Move o elemento 5px para baixo */
+}
+
+/* Estilos para inputs e selects */
+input, select {
+  width: 100%; /* Faz o elemento ocupar 100% da largura do contêiner */
+  border: 1px outset; /* Adiciona uma borda em estilo "outset" */
+  padding: 10px; /* Adiciona um padding interno de 10px */
+}
+
+/* Estilos para inputs quando estão em foco */
+input:focus {
+  background: lightyellow; /* Altera o fundo para amarelo claro */
+  border: 1px solid yellow; /* Altera a borda para amarela */
+  outline: none; /* Remove o contorno padrão */
+}
+
+/* Classe para labels com largura de 50% */
+.label-50 {
+  width: 50%; /* Define a largura como 50% */
+  float: left; /* Permite que o elemento flutue à esquerda */
+}
+
+/* Estilos para elementos centralizados */
+.center {
+  text-align: center; /* Centraliza o texto */
+  padding: 2%; /* Adiciona um padding interno de 2% */
+}
+
+/* Estilos para botões */
+button {
+  padding: 10px; /* Adiciona um padding interno de 10px */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  font-size: 16px; /* Define o tamanho da fonte */
+  background: #eee; /* Define um fundo cinza claro */
+  border: 1px solid #666; /* Adiciona uma borda cinza escura */
+}
+
+/* Estilos para botões ao passar o mouse */
+button:hover {
+  background-color: #ddd; /* Muda o fundo para cinza mais claro ao passar o mouse */
+}
+
+/* Estilos para botões quando estão ativos (pressionados) */
+button:active {
+  background-color: #666; /* Muda o fundo para cinza escuro quando pressionado */
+}
+
+/* Estilos para botões com a classe 'botao-enviar' */
+.botao-enviar {
+  background-color: greenyellow; /* Define um fundo verde amarelado */
+}
+
+/* Estilos para o cabeçalho e títulos h1 */
+header, h1 {
+  text-align: center; /* Centraliza o texto */
+  font-family: sans-serif; /* Define a fonte como sans-serif */
+}
+
+/* Estilos para o texto de cadastro */
+#cadastro_texto {
+  text-align: center; /* Centraliza o texto */
+  font-family: sans-serif; /* Define a fonte como sans-serif */
+}
+
+/* Estilo geral para o corpo da página */
+body {
+  background-color: #F3F7F6; /* Define um fundo cinza muito claro para o corpo */
+}

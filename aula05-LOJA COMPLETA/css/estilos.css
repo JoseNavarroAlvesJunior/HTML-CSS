@@ -1,80 +1,99 @@
-html{
-    scroll-behavior: smooth;
+/* Estilização geral do HTML para comportamento de rolagem suave */
+html {
+    scroll-behavior: smooth; /* Faz com que a rolagem suave ocorra ao clicar em links de âncoras */
 }
+
+/* Estilos do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Define a fonte como Arial, com uma alternativa sans-serif */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    box-sizing: border-box; /* Faz com que padding e border sejam incluídos nas dimensões dos elementos */
 }
 
-
+/* Estilização do cabeçalho */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
 }
+
+/* Estilos de navegação */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
+    display: flex; /* Usa flexbox para organizar os links na linha */
+    justify-content: center; /* Centraliza os itens dentro do nav */
+    background-color: #444; /* Cor de fundo da barra de navegação */
 }
+
 nav a {
-    color: white;
-    padding: 1rem;
-    text-decoration: none;
+    color: white; /* Cor dos links */
+    padding: 1rem; /* Espaçamento interno dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
 }
+
 nav a:hover {
-    background-color: #555;
+    background-color: #555; /* Muda a cor de fundo ao passar o mouse sobre o link */
 }
+
+/* Estilos para contêiner principal */
 .container {
-    padding: 2rem;
+    padding: 2rem; /* Espaçamento interno do contêiner */
 }
+
+/* Estilos para os produtos */
 .product {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 1rem;
-    text-align: center;
+    border: 1px solid #ddd; /* Borda leve ao redor dos produtos */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 1rem; /* Espaçamento interno */
+    margin: 1rem; /* Margem externa entre os produtos */
+    text-align: center; /* Centraliza o conteúdo do produto */
 }
+
 .product img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do produto */
+    height: auto; /* Mantém a proporção da imagem */
 }
+
 .product h2 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+    font-size: 1.5rem; /* Define o tamanho da fonte do título do produto */
+    margin: 0.5rem 0; /* Margens verticais em torno do título */
 }
+
 .product p {
-    color: #555;
+    color: #555; /* Cor do texto da descrição do produto */
 }
+
 .product button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 0.5rem 1rem; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
 }
+
 .product button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Muda a cor de fundo do botão ao passar o mouse */
 }
+
+/* Estilos responsivos para telas maiores */
 @media (min-width: 768px) {
     .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: flex; /* Usa flexbox para organizar produtos em linha */
+        flex-wrap: wrap; /* Permite que os produtos se movam para a próxima linha */
+        justify-content: space-around; /* Espaça os produtos uniformemente */
     }
     .product {
-        flex: 1 1 calc(33.333% - 2rem);
-        margin: 1rem;
+        flex: 1 1 calc(33.333% - 2rem); /* Define o tamanho do produto, ocupando 1/3 do espaço disponível, menos margens */
+        margin: 1rem; /* Margem externa entre os produtos */
     }
 }
-footer{
-    background: #ccc;
-    text-align: center;
-    padding: 2%;
-    border-top: 1px solid #999;
-  }
 
+/* Estilos do rodapé */
+footer {
+    background: #ccc; /* Cor de fundo do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 2%; /* Espaçamento interno do rodapé */
+    border-top: 1px solid #999; /* Borda superior leve no rodapé */
+}

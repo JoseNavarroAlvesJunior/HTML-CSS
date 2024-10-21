@@ -1,95 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reseta as margens e preenchimentos de todos os elementos */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
 }
 
-main{
-    font: 12px "verdana";
+/* Define a fonte padrão para o elemento <main> */
+main {
+    font: 12px "verdana"; /* Define a fonte Verdana com tamanho 12px */
 }
 
-#lista-contatos{
-    margin: 0 auto;
-    width: 50%;
-    padding: 5px;
+/* Estilo da lista de contatos */
+#lista-contatos {
+    margin: 0 auto; /* Centraliza o contêiner */
+    width: 50%; /* Define a largura em 50% da tela */
+    padding: 5px; /* Adiciona preenchimento interno */
 }
 
-#lista-contatos table{
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #0000;
+/* Estilo da tabela dentro da lista de contatos */
+#lista-contatos table {
+    width: 100%; /* Tabela ocupa 100% da largura do contêiner */
+    border-collapse: collapse; /* Remove espaços entre células */
+    border: 1px solid #0000; /* Define borda invisível */
 }
 
-#lista-contatos table tr{
-    border: 1px solid #0000;
-    padding: 10px;
+/* Estilo das linhas da tabela */
+#lista-contatos table tr {
+    border: 1px solid #0000; /* Define borda invisível para as linhas */
+    padding: 10px; /* Adiciona preenchimento nas linhas */
 }
 
-#lista-contatos table td{
-    padding: 5px;
+/* Estilo das células da tabela */
+#lista-contatos table td {
+    padding: 5px; /* Adiciona preenchimento interno às células */
 }
 
-#lista-contatos table td img{
-    width: 70px;
-    border: 1px solid #0000;
+/* Estilo das imagens dentro das células */
+#lista-contatos table td img {
+    width: 70px; /* Define a largura das imagens */
+    border: 1px solid #0000; /* Define borda invisível para as imagens */
 }
 
-#lista-contatos table tbody tr:hover{
-    background: yellow;
+/* Efeito de destaque na linha da tabela ao passar o mouse */
+#lista-contatos table tbody tr:hover {
+    background: yellow; /* Muda a cor de fundo para amarelo */
 }
 
-.botao-remover-contato{
-    cursor: pointer;
-    text-align: center;
-    border: none !important;
-    width: 16px !important;
+/* Estilo dos botões de remover contato */
+.botao-remover-contato {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    text-align: center; /* Centraliza o conteúdo */
+    border: none !important; /* Remove a borda, ignorando qualquer outra regra */
+    width: 16px !important; /* Define a largura do botão */
 }
 
-#formulario-cadastro-contato
-{
-    width: 50%;
-    margin: 0 auto;
-    display: none;
+/* Estilo do formulário de cadastro de contato */
+#formulario-cadastro-contato {
+    width: 50%; /* Define a largura em 50% da tela */
+    margin: 0 auto; /* Centraliza o formulário */
+    display: none; /* Esconde o formulário inicialmente */
 }
 
-
-#formulario-cadastro-contato fieldset{
-    background: #ccc;
-    border: 1px solid #0000;
-    padding: 1%;
+/* Estilo do fieldset dentro do formulário */
+#formulario-cadastro-contato fieldset {
+    background: #ccc; /* Define a cor de fundo do fieldset */
+    border: 1px solid #0000; /* Define borda invisível */
+    padding: 1%; /* Adiciona preenchimento interno */
 }
 
+/* Estilo do legend dentro do fieldset */
 #formulario-cadastro-contato legend {
-    text-align: center;
-    padding: 5px;
-    border: 1px solid #0000;
-    background: #0000;
-    font-weight: bold;
-    color: #fff;
+    text-align: center; /* Centraliza o texto */
+    padding: 5px; /* Adiciona preenchimento */
+    border: 1px solid #0000; /* Define borda invisível */
+    background: #0000; /* Define fundo invisível */
+    font-weight: bold; /* Define o texto como negrito */
+    color: #fff; /* Define a cor do texto como branco */
 }
 
-#formulario-cadastro-contato ul li{
-    display: inline-block;
-    padding: 5px 7% 5px 5%;
+/* Estilo dos itens da lista dentro do formulário */
+#formulario-cadastro-contato ul li {
+    display: inline-block; /* Exibe os itens em linha */
+    padding: 5px 7% 5px 5%; /* Define preenchimento interno */
 }
 
-#formulario-cadastro-contato ul img{
-    width: 70px;
-    border: 1px solid #0000;
-    background: #fff;
-    cursor: pointer;
+/* Estilo das imagens dentro da lista do formulário */
+#formulario-cadastro-contato ul img {
+    width: 70px; /* Define a largura das imagens */
+    border: 1px solid #0000; /* Define borda invisível */
+    background: #fff; /* Define fundo branco */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
-#formulario-cadastro-contato input{
-    display: block;
-    margin: 0px 0 5px 0;
-    border: 1px solid #0000;
-    padding: 5px;
-    width: 98%;
+/* Estilo dos campos de entrada do formulário */
+#formulario-cadastro-contato input {
+    display: block; /* Exibe como bloco */
+    margin: 0px 0 5px 0; /* Define margem inferior */
+    border: 1px solid #0000; /* Define borda invisível */
+    padding: 5px; /* Adiciona preenchimento interno */
+    width: 98%; /* Define largura do campo de entrada */
 }
 
-#formulario-cadastro-contato button{
-    float: right;
-    background: #0000;
-    color: #fff;
-    padding: 10px;
+/* Estilo dos botões dentro do formulário */
+#formulario-cadastro-contato button {
+    float: right; /* Alinha o botão à direita */
+    background: #0000; /* Define fundo invisível */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 10px; /* Adiciona preenchimento interno */
 }

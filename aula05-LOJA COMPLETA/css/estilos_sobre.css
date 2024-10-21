@@ -1,82 +1,93 @@
+/* Estilos para a seção "Sobre nós" */
 #sobre-nos {
-    margin-top: 2%;
-  }
-  
-  #sobre-nos aside video{
-    max-width: 100%;
-  }
-  
-  #sobre-nos aside, #sobre-nos article{
-    background: #eee;
-    width: 42%;
-    float: left;
-    margin: 1%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
-    
-    box-sizing: border-box;
-  }
-  
-  #sobre-nos article{
-    width: 54%;
-    text-align: left;
-    padding: 1%;
-  }
-  
-  #sobre-nos article p{
-    margin-bottom: 5%;
-    line-height: 25px;
-  }
-
-  article h3{
-    text-transform: uppercase;
-  }
-
-  #nossa-loja{
-    width: 350px;
-    height: 230px;
-    margin: auto;
-  }
-
-#entrada-loja{
-  width: 350px;
-  height: 230px;
-  margin: auto;
+  margin-top: 2%; /* Adiciona uma margem superior de 2% à seção */
 }
 
-  #fotos {
-    overflow: hidden;
-    clear: both;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  figure{
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    float: left;
-    padding: 5px;
-    max-width: 30%;
-    margin: 1%;
-    text-align: center;
-  }
-  
-  img{
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  figcaption{
-    background-color: #222;
-    border-radius: 10px;
-    color: #fff;
-    padding: 3px;
-    text-align: center;
-  }
+/* Estilo para vídeos dentro da seção "Sobre nós" */
+#sobre-nos aside video {
+  max-width: 100%; /* Faz o vídeo ocupar no máximo 100% da largura do contêiner */
+}
+
+/* Estilização geral para o aside e article dentro de "sobre-nos" */
+#sobre-nos aside, #sobre-nos article {
+  background: #eee; /* Define uma cor de fundo cinza claro */
+  width: 42%; /* Define a largura dos elementos como 42% */
+  float: left; /* Alinha os elementos à esquerda, permitindo que fiquem lado a lado */
+  margin: 1%; /* Adiciona uma margem de 1% ao redor dos elementos */
+  border: 1px solid #ccc; /* Adiciona uma borda cinza clara ao redor */
+  border-radius: 10px; /* Arredonda os cantos da borda */
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .1); /* Adiciona uma sombra suave ao redor dos elementos */
+  box-sizing: border-box; /* Inclui padding e borda na largura e altura total do elemento */
+}
+
+/* Estilo específico para o article dentro de "sobre-nos" */
+#sobre-nos article {
+  width: 54%; /* Define a largura do article como 54% */
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 1%; /* Adiciona padding interno de 1% */
+}
+
+/* Estilo para parágrafos dentro do article */
+#sobre-nos article p {
+  margin-bottom: 5%; /* Adiciona uma margem inferior de 5% aos parágrafos */
+  line-height: 25px; /* Define a altura da linha para melhorar a legibilidade */
+}
+
+/* Estilo para cabeçalhos h3 dentro de article */
+article h3 {
+  text-transform: uppercase; /* Transforma o texto do cabeçalho em maiúsculas */
+}
+
+/* Estilo para a imagem "nossa-loja" */
+#nossa-loja {
+  width: 350px; /* Define a largura da imagem */
+  height: 230px; /* Define a altura da imagem */
+  margin: auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo para a imagem "entrada-loja" */
+#entrada-loja {
+  width: 350px; /* Define a largura da imagem */
+  height: 230px; /* Define a altura da imagem */
+  margin: auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilos para a seção de fotos */
+#fotos {
+  overflow: hidden; /* Impede que elementos flutuantes saiam do contêiner */
+  clear: both; /* Limpa flutuações anteriores */
+  background-color: #eee; /* Define uma cor de fundo cinza claro */
+  border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
+  border-radius: 10px; /* Arredonda os cantos da borda */
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .1); /* Adiciona uma sombra suave */
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+  display: flex; /* Usa flexbox para alinhar itens dentro do contêiner */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilo para figuras dentro da seção de fotos */
+figure {
+  border: 1px solid #ccc; /* Adiciona uma borda cinza clara ao redor */
+  border-radius: 10px; /* Arredonda os cantos da borda */
+  float: left; /* Permite que as figuras fiquem lado a lado */
+  padding: 5px; /* Adiciona padding interno de 5px */
+  max-width: 30%; /* Define uma largura máxima de 30% */
+  margin: 1%; /* Adiciona uma margem de 1% ao redor das figuras */
+  text-align: center; /* Centraliza o texto dentro das figuras */
+}
+
+/* Estilo para imagens dentro de figuras */
+img {
+  max-width: 100%; /* Faz a imagem ocupar no máximo 100% da largura do contêiner */
+  border-radius: 10px; /* Arredonda os cantos da imagem */
+}
+
+/* Estilo para a legenda das figuras */
+figcaption {
+  background-color: #222; /* Define um fundo escuro para a legenda */
+  border-radius: 10px; /* Arredonda os cantos da borda da legenda */
+  color: #fff; /* Define a cor do texto como branco */
+  padding: 3px; /* Adiciona padding interno de 3px */
+  text-align: center; /* Centraliza o texto da legenda */
+}

@@ -1,105 +1,115 @@
-fieldset{
-    padding: 1%;
-    border-radius: 10px;
-    background: #eee;
-    border: 1px solid #ddd;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
-    margin-top: 2%;
+fieldset {
+    padding: 1%; /* Adiciona um preenchimento de 1% dentro do fieldset */
+    border-radius: 10px; /* Arredonda os cantos do fieldset */
+    background: #eee; /* Define uma cor de fundo clara para o fieldset */
+    border: 1px solid #ddd; /* Adiciona uma borda cinza clara ao fieldset */
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1); /* Adiciona uma sombra leve para profundidade */
+    margin-top: 2%; /* Adiciona uma margem superior de 2% */
 }
 
-legend{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-image: #eee;
-    padding: .5%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+legend {
+    text-align: center; /* Centraliza o texto do legend */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    font-weight: bold; /* Define o texto como negrito */
+    background-image: #eee; /* Define a cor de fundo (deveria ser 'background' em vez de 'background-image') */
+    padding: .5%; /* Adiciona um preenchimento de 0.5% */
+    border: 1px solid #ddd; /* Adiciona uma borda ao redor do legend */
+    border-radius: 10px; /* Arredonda os cantos do legend */
 }
 
-label, input, select{
-    display: block;
-    box-sizing: border-box;
+label, input, select {
+    display: block; /* Define que os elementos serão exibidos como blocos, ocupando toda a largura disponível */
+    box-sizing: border-box; /* Inclui preenchimento e borda nas dimensões do elemento */
 }
 
-label{
-    padding: 5px;
+label {
+    padding: 5px; /* Adiciona um preenchimento de 5px ao label */
 }
 
-input, select{
-    width: 100%;
-    border: 1px outset;
-    padding: 10px;
+input, select {
+    width: 100%; /* Define a largura dos inputs e selects como 100% do elemento pai */
+    border: 1px outset; /* Aplica um estilo de borda "outset" aos inputs e selects */
+    padding: 10px; /* Adiciona um preenchimento de 10px dentro dos inputs e selects */
 }
 
-input:focus{
-    background: lightyellow;
-    border: 1px solid yellow;
-    outline: none;
+input:focus {
+    background: lightyellow; /* Altera o fundo do input para amarelo claro ao focar */
+    border: 1px solid yellow; /* Muda a cor da borda para amarelo ao focar */
+    outline: none; /* Remove a borda padrão de foco do navegador */
 }
 
-.label-50{
-    width: 50%;
-    float: left;
-}
-.center{
-    text-align: center;
-    padding: 2%;
+.label-50 {
+    width: 50%; /* Define a largura da classe como 50% */
+    float: left; /* Faz o elemento flutuar à esquerda */
 }
 
-button{
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    background: #eee;
-    border: 1px solid #666;
+.center {
+    text-align: center; /* Centraliza o texto */
+    padding: 2%; /* Adiciona um preenchimento de 2% */
 }
 
-button:hover{
-    background-color: #ddd;
+button {
+    padding: 10px; /* Adiciona um preenchimento de 10px ao botão */
+    cursor: pointer; /* Muda o cursor para ponteiro ao passar sobre o botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    background: #eee; /* Define uma cor de fundo clara para o botão */
+    border: 1px solid #666; /* Adiciona uma borda cinza ao botão */
 }
 
-button:active{
-    background-color: #666;
+button:hover {
+    background-color: #ddd; /* Altera a cor de fundo ao passar o mouse sobre o botão */
 }
 
-.botao-enviar{
-    background-color: greenyellow;
-}
-/* Part 2*/
-
-.d-block {display: block;}
-
-form p{padding: 1% 0 1% 0;}
-
-input[type=checkbox], input[type=radio]{
-  display: inline;
-  width: auto;
+button:active {
+    background-color: #666; /* Altera a cor de fundo quando o botão é pressionado */
 }
 
-.checkbox-inline{
-  display: inline-block;
-  border: 1px solid #bbb;
-  cursor: pointer;
+.botao-enviar {
+    background-color: greenyellow; /* Define uma cor de fundo específica para o botão de enviar */
 }
 
-.checkbox-inline:hover {background-color: #ddd;}
+/* Part 2 */
 
-textarea{
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  border: 1px outset;
-  padding: 10px;
+.d-block {
+    display: block; /* Define que os elementos com esta classe serão exibidos como blocos */
 }
 
-input :invalid, select:invalid, textarea:invalid{
-  border: 1px solid red;
+form p {
+    padding: 1%; /* Adiciona um preenchimento vertical de 1% aos parágrafos dentro do formulário */
 }
 
-input:valid, select:invalid, textarea:invalid{border: 1px solid green;}
+input[type=checkbox], input[type=radio] {
+    display: inline; /* Exibe checkboxes e radio buttons em linha, não em bloco */
+    width: auto; /* Define a largura como automática */
+}
 
-input, select, textarea, .checkbox-inline{
-  border-radius: 5px;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+.checkbox-inline {
+    display: inline-block; /* Exibe o checkbox em linha como um bloco inline */
+    border: 1px solid #bbb; /* Adiciona uma borda cinza clara ao checkbox */
+    cursor: pointer; /* Muda o cursor para ponteiro ao passar sobre o checkbox */
+}
+
+.checkbox-inline:hover {
+    background-color: #ddd; /* Altera a cor de fundo ao passar o mouse sobre o checkbox */
+}
+
+textarea {
+    display: block; /* Define o textarea como um bloco */
+    box-sizing: border-box; /* Inclui preenchimento e borda nas dimensões do textarea */
+    width: 100%; /* Define a largura do textarea como 100% do elemento pai */
+    border: 1px outset; /* Aplica um estilo de borda "outset" ao textarea */
+    padding: 10px; /* Adiciona um preenchimento de 10px dentro do textarea */
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border: 1px solid red; /* Aplica uma borda vermelha a inputs, selects e textareas inválidos */
+}
+
+input:valid, select:valid, textarea:valid {
+    border: 1px solid green; /* Aplica uma borda verde a inputs, selects e textareas válidos */
+}
+
+input, select, textarea, .checkbox-inline {
+    border-radius: 5px; /* Arredonda os cantos dos elementos */
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1); /* Adiciona uma sombra leve para profundidade */
 }

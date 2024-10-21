@@ -1,28 +1,41 @@
+/* Estilos gerais para a tabela */
 table {
-    border-collapse: collapse; /* Retira o espaço entre as célular*/
-    -webkit-border-radius: 5px; /* HACK: Borda arredondada */
-    border-radius: 5px; /* HACK: Borda arredondada */
-    overflow: hidden; /* HACK: Borda arredondada */
-    width: 100%;
-    margin: 2% 0 2% 0; /* Margem: Topo, direita, abaixo e esquerda */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
-    cursor: default;
+    border-collapse: collapse; /* Remove o espaço entre as células da tabela */
+    -webkit-border-radius: 5px; /* HACK: Para compatibilidade com navegadores WebKit (ex: Safari) para bordas arredondadas */
+    border-radius: 5px; /* Define bordas arredondadas para a tabela */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse as bordas arredondadas */
+    width: 100%; /* Faz a tabela ocupar 100% da largura do seu contêiner pai */
+    margin: 2% 0; /* Define a margem superior e inferior da tabela */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3); /* Adiciona uma sombra ao redor da tabela para dar profundidade */
+    cursor: default; /* Define o cursor padrão ao passar sobre a tabela */
 }
 
+/* Estilização do cabeçalho da tabela */
 table thead tr {
-    background: #90e0b3;
-    color: #000;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 2%;
+    background: #90e0b3; /* Cor de fundo para o cabeçalho da tabela */
+    color: #000; /* Cor do texto no cabeçalho */
+    text-transform: uppercase; /* Transforma o texto do cabeçalho em letras maiúsculas */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 2%; /* Define um espaçamento interno para o cabeçalho */
 }
 
-table tbody td, table thead th { padding: 10px;}
+/* Espaçamento para células do corpo e cabeçalho da tabela */
+table tbody td, table thead th {
+    padding: 10px; /* Adiciona padding às células do corpo e do cabeçalho */
+}
 
-table tbody td { border-bottom: 1px solid #ddd; }
+/* Estilos para células do corpo da tabela */
+table tbody td {
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda inferior leve às células do corpo */
+}
 
+/* Efeito de hover nas linhas do corpo da tabela */
 table tbody tr:hover {
-    background-color: #d3d3d0; cursor: crosshair;
+    background-color: #d3d3d0; /* Muda a cor de fundo da linha quando o mouse passa sobre ela */
+    cursor: crosshair; /* Muda o cursor para uma cruz ao passar sobre a linha */
 }
 
-table tbody tr:nth-child(odd) { background-color: #EEE;}
+/* Estilo para linhas ímpares do corpo da tabela */
+table tbody tr:nth-child(odd) {
+    background-color: #EEE; /* Define uma cor de fundo diferente para linhas ímpares */
+}

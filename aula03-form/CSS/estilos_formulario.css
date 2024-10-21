@@ -1,68 +1,70 @@
-fieldset{
-    padding: 1%;
-    border-radius: 10px;
-    background: #eee;
-    border: 1px solid #ddd;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
-    margin-top: 2%;
-  }
-  
-  legend{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-image: #eee;
-    padding: .5%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-  }
-  
-  label, input, select{
-    display: block;
-    box-sizing: border-box;
-  }
-  
-  label{
-    padding: 5px;
-  }
-  
-  input, select{
-    width: 100%;
-    border: 1px outset;
-    padding: 10px;
-  }
-  
-  input:focus{
-    background: lightyellow;
-    border: 1px solid yellow;
-    outline: none;
-  }
-  
-  .label-50{
-    width: 50%;
-    float: left;
-  }
-  .center{
-    text-align: center;
-    padding: 2%;
-  }
-  
-  button{
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    background: #eee;
-    border: 1px solid #666;
-  }
-  
-  button:hover{
-    background-color: #ddd;
-  }
-  
-  button:active{
-    background-color: #666;
-  }
-  
-  .botao-enviar{
-    background-color: greenyellow;
-  }
+fieldset {
+  padding: 1%; /* Espaçamento interno ao redor do conteúdo do fieldset */
+  border-radius: 10px; /* Cantos arredondados para o fieldset */
+  background: #ee9fea; /* Cor de fundo do fieldset */
+  border: 1px solid #ddd; /* Borda leve ao redor do fieldset */
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .1); /* Sombra suave para dar profundidade */
+  margin-top: 2%; /* Espaço acima do fieldset */
+}
+
+legend {
+  text-align: center; /* Centraliza o texto do legend */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  font-weight: bold; /* Deixa o texto em negrito */
+  background: #a818a1; /* cor de fundo do legend */
+  padding: .5%; /* Espaçamento interno do legend */
+  border: 1px solid #ddd; /* Borda leve ao redor do legend */
+  border-radius: 10px; /* Cantos arredondados para o legend */
+}
+
+label, input, select {
+  display: block; /* Faz com que cada elemento ocupe a linha inteira */
+  box-sizing: border-box; /* Inclui padding e border nas dimensões totais */
+}
+
+label {
+  color: black;
+  padding: 5px; /* Espaçamento interno para labels */
+}
+
+input, select {
+  width: 100%; /* Faz com que inputs e selects ocupem toda a largura disponível */
+  border: 1px outset; /* Borda com efeito de relevo */
+  padding: 10px; /* Espaçamento interno nos inputs e selects */
+}
+
+input:focus {
+  background: rgb(87, 241, 87); /* Muda a cor de fundo quando o input está focado */
+  border: 2px solid yellowgreen; /* Borda amarela ao focar no input */
+  outline: none; /* Remove o contorno padrão do browser */
+}
+
+.label-50 {
+  width: 50%; /* Define a largura de elementos com essa classe como 50% */
+  float: left; /* Faz com que os elementos flutuem para a esquerda */
+}
+
+.center {
+  text-align: center; /* Centraliza o texto */
+  padding: 2%; /* Espaçamento interno da classe center */
+}
+
+button {
+  padding: 10px; /* Espaçamento interno do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  background: rgb(14, 224, 14); /* Cor de fundo padrão do botão */
+  border: 1px solid #666; /* Borda escura ao redor do botão */
+}
+
+button:hover {
+  background-color: #fffdfd; /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+button:active {
+  background-color: purple; /* Cor de fundo quando o botão é pressionado */
+}
+
+.botao-enviar {
+  background-color: rgb(14, 224, 14); /* Cor de fundo específica para botões de envio */
+}

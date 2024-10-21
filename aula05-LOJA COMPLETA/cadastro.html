@@ -1,72 +1,75 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> 
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Clientes</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/estilos_formularios.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade para dispositivos móveis -->
+    <title>Cadastro de Clientes</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Link para a folha de estilos principal -->
+    <link rel="stylesheet" href="css/estilos_formularios.css"> <!-- Link para a folha de estilos específica do formulário -->
 </head>
 <body>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-        <a href="cadastro.html">Entrar/Cadastro</a>
+    <nav> <!-- Navegação principal da página -->
+        <a href="index.html">Início</a> <!-- Link para a página inicial -->
+        <a href="produtos.html">Produtos</a> <!-- Link para a página de produtos -->
+        <a href="sobre.html">Sobre</a> <!-- Link para a página sobre -->
+        <a href="contato.html">Contato</a> <!-- Link para a página de contato -->
+        <a href="cadastro.html">Entrar/Cadastro</a> <!-- Link para a página de cadastro -->
     </nav>
-    <div id="corpo">
-        <header>Cadastrar-Se</header>
+    
+    <div id="corpo"> <!-- Div que envolve o conteúdo principal -->
+        <header>Cadastrar-Se</header> <!-- Cabeçalho da página com o título "Cadastrar-Se" -->
+        
         <main>
-            <form action="outra_pagina.html" method="get" target="_blank" enctype="multipart/form-data">
-                <fieldset>
-                <legend>Dados Pessoais</legend>
+            <form action="outra_pagina.html" method="get" target="_blank" enctype="multipart/form-data"> <!-- Formulário de cadastro -->
+                <fieldset> <!-- Agrupa os elementos do formulário -->
+                <legend>Dados Pessoais</legend> <!-- Título do grupo de dados -->
                 
-                <label class="label-50"> Nome:
-                    <input type="text" name="txt_name" placeholder="Digite seu Nome" autofocus required/>
+                <label class="label-50"> Nome: <!-- Rótulo para o campo de nome -->
+                    <input type="text" name="txt_name" placeholder="Digite seu Nome" autofocus required/> <!-- Campo para nome, com preenchimento obrigatório -->
                 </label>
-                <label class="label-50"> Sobrenome:
-                    <input type="text" name="txt_sobrenome" placeholder="Digite Seu Sobrenome" />
-                </label>
-
-                <label> Email:
-                    <input type="email" name="txt_email" placeholder="Digite Seu Email" required/>
+                
+                <label class="label-50"> Sobrenome: <!-- Rótulo para o campo de sobrenome -->
+                    <input type="text" name="txt_sobrenome" placeholder="Digite Seu Sobrenome" /> <!-- Campo para sobrenome -->
                 </label>
 
-                <label class="label-50"> Senha:
-                    <input type="password" name="txt_senha" placeholder="Digite Sua Senha" required/>
+                <label> Email: <!-- Rótulo para o campo de email -->
+                    <input type="email" name="txt_email" placeholder="Digite Seu Email" required/> <!-- Campo para email, com preenchimento obrigatório -->
                 </label>
 
-                <label class="label-50"> Confirme a Senha: 
-                    <input type="password" name="txt_confirme_senha" placeholder="Confirme a Senha" required/>
+                <label class="label-50"> Senha: <!-- Rótulo para o campo de senha -->
+                    <input type="password" name="txt_senha" placeholder="Digite Sua Senha" required/> <!-- Campo para senha, com preenchimento obrigatório -->
                 </label>
 
-                <label> Endereço, Nº:
-                    <input type="text" name="txt_endereco" placeholder="Digite seu Endereço" required/>
+                <label class="label-50"> Confirme a Senha: <!-- Rótulo para o campo de confirmação de senha -->
+                    <input type="password" name="txt_confirme_senha" placeholder="Confirme a Senha" required/> <!-- Campo para confirmar senha -->
+                </label>
+
+                <label> Endereço, Nº: <!-- Rótulo para o campo de endereço -->
+                    <input type="text" name="txt_endereco" placeholder="Digite seu Endereço" required/> <!-- Campo para endereço, com preenchimento obrigatório -->
                 </label>
              
-                <label class="label-50">Estado
-                    <select name="txt_estado" required>
-                        <option value="">Selecione...</option>
-                        <option value="">São Paulo</option>
-                        <option value="">Rio de Janeiro</option>
-                        <option value="">Bahia</option>
+                <label class="label-50">Estado <!-- Rótulo para o campo de estado -->
+                    <select name="txt_estado" required> <!-- Seleção para escolher o estado, com preenchimento obrigatório -->
+                        <option value="">Selecione...</option> <!-- Opção padrão desabilitada -->
+                        <option value="">São Paulo</option> <!-- Opção de estado -->
+                        <option value="">Rio de Janeiro</option> <!-- Opção de estado -->
+                        <option value="">Bahia</option> <!-- Opção de estado -->
                     </select>
                 </label>
                 
-
-                <label class="label-50">Data de Nascimento
-                    <input type="date" name="txt_data_nascimento" placeholder="Digite a Data de Nascimento" required/>
+                <label class="label-50">Data de Nascimento <!-- Rótulo para o campo de data de nascimento -->
+                    <input type="date" name="txt_data_nascimento" placeholder="Digite a Data de Nascimento" required/> <!-- Campo para data de nascimento, com preenchimento obrigatório -->
                 </label>
                
-                <label class="label-50-center">Li e Aceitos os Termos
-                    <input class="label-50-center" type="checkbox" name="txt_aceito_os_termos"  id="aceito_termos" value="aceito_termos" required/>
+                <label class="label-50-center">Li e Aceitos os Termos <!-- Rótulo para o checkbox de termos -->
+                    <input class="label-50-center" type="checkbox" name="txt_aceito_os_termos" id="aceito_termos" value="aceito_termos" required/> <!-- Checkbox para aceitação de termos, com preenchimento obrigatório -->
                 </label>
 
                 </fieldset>
-                <p class="center">
-                    <button type="submit" class="botao-enviar">Salvar</button>
-                    <button type="reset">Limpar</button>
+                
+                <p class="center"> <!-- Parágrafo centralizado para os botões -->
+                    <button type="submit" class="botao-enviar">Salvar</button> <!-- Botão para enviar o formulário -->
+                    <button type="reset">Limpar</button> <!-- Botão para limpar os campos do formulário -->
                 </p>
             </form>
         </main>
