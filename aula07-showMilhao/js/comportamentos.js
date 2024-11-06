@@ -1,37 +1,44 @@
+// Quando a página é totalmente carregada, a função 'tratar_eventos' é chamada
+// e o áudio de abertura do jogo é tocado.
 window.onload = function () {
-    tratar_eventos();
-    tocar_audio("abertura");
+    tratar_eventos(); // Chama a função que trata todos os eventos do jogo.
+    tocar_audio("abertura"); // Toca o áudio de abertura do jogo (provavelmente uma introdução).
 }
-/**
- * jogador clicou no botão comecar/reiniciar jogo.
- */
 
+/**
+ * Esta função configura os eventos para interação do jogador, como cliques e envios de formulários.
+ */
 function tratar_eventos() {
+    // Evento que ocorre quando o jogador clica no botão "Começar".
     document.getElementById("btn-comecar").onclick = function () {
-        tocar_audio('comecar');
-        document.getElementById("comecar").style.display = "none";
-        document.getElementById("pergunta1000").style.display = "block";
+        tocar_audio('comecar'); // Toca o áudio de início do jogo.
+        document.getElementById("comecar").style.display = "none"; // Esconde a seção do botão "Começar".
+        document.getElementById("pergunta1000").style.display = "block"; // Exibe a primeira pergunta (R$ 1000).
     }
 
     /**
-     * analisar respostas da pergunta de R$ 1000
+     * Evento de envio do formulário de resposta da pergunta de R$ 1000.
+     * Aqui, a resposta do jogador é verificada e, dependendo da resposta, o jogo continua ou reinicia.
      */
     document.getElementById("form-pergunta1000").onsubmit = function () {
-        var opcao_correta = "3";
-        var opcao_selecionada = this.pergunta1000.value;
+        var opcao_correta = "3"; // Define a opção correta para a pergunta de R$ 1000. A opção correta é a "3" (ESPÍRITO SANTO).
+        var opcao_selecionada = this.pergunta1000.value; // Obtém o valor da opção selecionada pelo jogador no formulário.
 
+        // Verifica se a resposta selecionada é a correta.
         if (opcao_selecionada == opcao_correta) {
-            tocar_audio('pergunta-2000');
-            document.getElementById("pergunta1000").style.display = "none";
-            document.getElementById("pergunta2000").style.display = "block";
+            tocar_audio('pergunta-2000'); // Toca o áudio de transição para a próxima pergunta (R$ 2000).
+            document.getElementById("pergunta1000").style.display = "none"; // Esconde a pergunta de R$ 1000.
+            document.getElementById("pergunta2000").style.display = "block"; // Exibe a próxima pergunta (R$ 2000).
         } else {
-            document.getElementById("pergunta1000").style.display = "none";
-            tocar_audio('errou');
-            reiniciar_jogo();
+            document.getElementById("pergunta1000").style.display = "none"; // Esconde a pergunta de R$ 1000 caso a resposta esteja errada.
+            tocar_audio('errou'); // Toca o áudio de erro, indicando que a resposta estava incorreta.
+            reiniciar_jogo(); // Chama a função que reinicia o jogo do início.
         }
 
-        return false;
+        return false; // Impede o comportamento padrão do envio do formulário (evita recarregar a página).
     }
+}
+
 
 
     /**
@@ -332,7 +339,6 @@ function tratar_eventos() {
     }
 
 
-}
 /**
  * função caso o jogador perca
  */

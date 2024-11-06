@@ -1,92 +1,97 @@
-<!DOCTYPE html> <!-- -->
-<html lang="pt-br"> <!-- -->
-<head> <!-- -->
-    <meta charset="UTF-8"> <!-- -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- -->
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head> <!-- Início da seção de cabeçalho -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que a página se ajuste em dispositivos móveis -->
     
-    <link rel="stylesheet" href="css/estilos.css"/> <!-- linka os css ao site -->
-    <script type="text/javascript" src="js/comportamentos.js"></script> <!-- linka o javascript ao site-->
-    <title>SHOW DO MILHÃO</title> <!-- titulo da aba da página (aparece para o usuario)-->
-</head><!-- fim do -->
+    <link rel="stylesheet" href="css/estilos.css"/> <!-- Link para o arquivo de estilo CSS -->
+    <script type="text/javascript" src="js/comportamentos.js"></script> <!-- Link para o arquivo de script JavaScript -->
+    <title>SHOW DO MILHÃO</title> <!-- Título da aba ou página exibida no navegador -->
+</head><!-- Fim do cabeçalho -->
 
-<body> <!-- conteudo do site que aparece pro usuario-->
-    <main> <!-- conteudo principal -->
-        <fieldset> <!-- agrupamento dos elementos -->
-            <legend> <!-- legenda do grupo dos elementos--> 
-                <img src="img_audio/img/logo.jpg" /> <!-- imagem usada para o logo-->
-            </legend> <!-- fim da leganda-->
-            <section id="comecar"> <!-- seção do botão começar-->
-                <button id="btn-comecar">Começar a Jogar!</button> <!-- Botão -->
-            </section> <!-- fim da seção do botão começar-->
-            <section id="lista-perguntas"> <!-- seção das perguntas-->
-<!-- 1ª RODADA -->
-                <div id="pergunta1000" class="pergunta"> <!-- 1ª perguntas-->
-                    <form id="form-pergunta1000"> <!-- formulario com as perguntas-->
-                        <p>Capixaba, é denominação de quem nasce em qual estado brasileiro?</p> <!-- texto com a pergunta-->
-                        <ul> <!-- -->
-                            <li> <!-- -->
+<body> <!-- Início do corpo da página, que contém o conteúdo visível ao usuário -->
+    <main> <!-- Elemento principal da página -->
+        <fieldset> <!-- Agrupa elementos de formulário -->
+            <legend> <!-- Legenda explicativa para o campo -->
+                <img src="img_audio/img/logo.jpg" /> <!-- Imagem do logo do jogo -->
+            </legend> <!-- Fim da legenda -->
+            <section id="comecar"> <!-- Seção para o botão de "Começar a Jogar" -->
+                <button id="btn-comecar">Começar a Jogar!</button> <!-- Botão que inicia o jogo -->
+            </section> <!-- Fim da seção "Começar" -->
+            
+            <section id="lista-perguntas"> <!-- Seção onde as perguntas serão exibidas -->
+                
+                <!-- 1ª RODADA: Pergunta Valendo 1000 -->
+                <div id="pergunta1000" class="pergunta"> <!-- Container para a pergunta -->
+                    <form id="form-pergunta1000"> <!-- Formulário para a pergunta 1000 -->
+                        <p>Capixaba, é denominação de quem nasce em qual estado brasileiro?</p> <!-- Texto da pergunta -->
+                        <ul> <!-- Lista de alternativas -->
+                            <li> <!-- Alternativa 1 -->
                                 <label>
-                                    <span>1</span><input type="radio" name="pergunta1000" value="1"/>
+                                    <span>1</span><input type="radio" name="pergunta1000" value="1"/> <!-- Rádio para alternativa 1 -->
                                     RIO GRANDE DO SUL
                                 </label>
                             </li>
-                            <li>
+                            <li> <!-- Alternativa 2 -->
                                 <label>
                                     <span>2</span><input type="radio" name="pergunta1000" value="2"/>
                                     SANTA CATARINA
                                 </label>
                             </li>
-                            <li>
+                            <li> <!-- Alternativa 3 -->
                                 <label>
                                     <span>3</span><input type="radio" name="pergunta1000" value="3"/>
-                                    ESPIRITO SANTO
+                                    ESPÍRITO SANTO
                                 </label>
                             </li>
-                            <li>
+                            <li> <!-- Alternativa 4 -->
                                 <label>
                                     <span>4</span><input type="radio" name="pergunta1000" value="4"/>
                                     PARAÍBA
                                 </label>
                             </li>
                         </ul>
-                        <button type="submit">Valendo 1000</button>
+                        <button type="submit">Valendo 1000</button> <!-- Botão de envio -->
                     </form>
-                </div>
+                </div> <!-- Fim da pergunta 1000 -->
 
-                <div id="pergunta2000" class="pergunta">
-                    <form id="form-pergunta2000">
-                        <p>De quem é a frase "penso, logo existo?"</p>
-                        <ul>
-                            <li>
+                <!-- 2ª RODADA: Pergunta Valendo 2000 -->
+                <div id="pergunta2000" class="pergunta"> <!-- Container para a pergunta -->
+                    <form id="form-pergunta2000"> <!-- Formulário para a pergunta 2000 -->
+                        <p>De quem é a frase "penso, logo existo?"</p> <!-- Texto da pergunta -->
+                        <ul> <!-- Lista de alternativas -->
+                            <li> <!-- Alternativa 1 -->
                                 <label>
-                                    <span>1</span> <input type="radio" name="pergunta2000" value="1"/>
+                                    <span>1</span><input type="radio" name="pergunta2000" value="1"/>
                                     PLATÃO
                                 </label>
                             </li>
-                            <li>
+                            <li> <!-- Alternativa 2 -->
                                 <label>
-                                    <span>2</span> <input type="radio" name="pergunta2000" value="2"/>
+                                    <span>2</span><input type="radio" name="pergunta2000" value="2"/>
                                     JÚLIO VERNE
                                 </label>
                             </li>
-                            <li>
+                            <li> <!-- Alternativa 3 -->
                                 <label>
-                                    <span>3</span> <input type="radio" name="pergunta2000" value="3"/>
+                                    <span>3</span><input type="radio" name="pergunta2000" value="3"/>
                                     ARISTÓTELES
                                 </label>
                             </li>
-                            <li>
+                            <li> <!-- Alternativa 4 -->
                                 <label>
-                                    <span>4</span> <input type="radio" name="pergunta2000" value="4"/>
+                                    <span>4</span><input type="radio" name="pergunta2000" value="4"/>
                                     RENÉ DESCARTES
                                 </label>
                             </li>
                         </ul>
                         <button type="submit">Valendo 2000</button>
                     </form>
-                </div>
+                </div> <!-- Fim da pergunta 2000 -->
 
-
+                <!-- Pergunta 3, 4 e 5 seguem o mesmo formato -->
+                
+                <!-- Pergunta 3 -->
                 <div id="pergunta3000" class="pergunta">
                     <form id="form-pergunta3000">
                         <p>Quem é a namorada do Mickey?</p>
@@ -118,9 +123,9 @@
                         </ul>
                         <button type="submit">Valendo 3000</button>
                     </form>
-                </div>
+                </div> <!-- Fim da pergunta 3000 -->
 
-                
+                <!-- Pergunta 4 -->
                 <div id="pergunta4000" class="pergunta">
                     <form id="form-pergunta4000">
                         <p>Quem proclamou a república no Brasil em 1889?</p>
@@ -152,13 +157,12 @@
                         </ul>
                         <button type="submit">Valendo 4000</button>
                     </form>
-                </div>
+                </div> <!-- Fim da pergunta 4000 -->
 
-
-                                
+                <!-- Pergunta 5 -->
                 <div id="pergunta5000" class="pergunta">
                     <form id="form-pergunta5000">
-                        <p>A água ferve a quantos graus centrígrados?</p>
+                        <p>A água ferve a quantos graus centígrados?</p>
                         <ul>
                             <li>
                                 <label>
@@ -187,7 +191,7 @@
                         </ul>
                         <button type="submit">Valendo 5000</button>
                     </form>
-                </div>
+                </div> <!-- Fim da pergunta 5000 -->
 
 <!-- 2ª RODADA-->
 
@@ -585,4 +589,4 @@
     </main> <!-- fim do conteudo principal-->
     <audio id="silvio-santos" />
 </body>
-</html>
+</html> <!-- FIM do documento html-->
