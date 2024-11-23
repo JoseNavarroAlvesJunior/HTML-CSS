@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios com Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+    <div class="container bg-white mt-5 rounded p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+            <a class="navbar-brand bg-dark text-danger" href="#">FATEC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tabela_bootstrap.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario_bootstrap.html">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Formulário -->
+        <div class="row">
+            <div class="col">
+                <h1>Cadastro de Alunos</h1>
+                <form action="arquivo.php" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" class="form-control" type="text" name="nome" required />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">E-mail:</label>
+                            <input id="email" class="form-control" type="email" name="email" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="curso">Curso:</label>
+                            <input id="curso" class="form-control" type="text" name="curso" required />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="turno">Turno:</label>
+                            <input id="turno" class="form-control" type="text" name="turno" required />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="anoIngresso">Ano de Ingresso:</label>
+                            <input id="anoIngresso" class="form-control" type="number" name="anoIngresso" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="cep">CEP:</label>
+                            <input id="cep" class="form-control" type="text" name="cep" required />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="endereco">Endereço:</label>
+                            <input id="endereco" class="form-control" type="text" name="endereco" required />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="numero">Número:</label>
+                            <input id="numero" class="form-control" type="text" name="numero" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="bairro">Bairro:</label>
+                            <input id="bairro" class="form-control" type="text" name="bairro" required />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="estado">Estado:</label>
+                            <select id="estado" class="form-control" name="estado" required>
+                                <option selected disabled>Escolha...</option>
+                                <option>São Paulo</option>
+                                <option>Rio de Janeiro</option>
+                                <option>Minas Gerais</option>
+                                <option>Paraná</option>
+                                <option>Bahia</option>
+                                <option>Acre</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="cidade">Cidade:</label>
+                            <select id="cidade" class="form-control" name="cidade" required>
+                                <option selected disabled>Escolha...</option>
+                                <option>Jaú</option>
+                                <option>Bocaina</option>
+                                <option>Mineiros do Tietê</option>
+                                <option>Araraquara</option>
+                                <option>Brotas</option>
+                                <option>Bauru</option>
+                                <option>Bariri</option>
+                                <option>São Paulo</option>
+                                <option>Rio de Janeiro</option>
+                                <option>Belo Horizonte</option>
+                                <option>Campo Grande</option>
+                                <option>Rio Branco</option>
+                                <option>Salvador</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                    <button type="submit" class="btn btn-success">Salvar</button>
+                    <button type="reset" class="btn btn-danger">Excluir</button>
+                    <a href="index.html" class="btn btn-secondary">Voltar</a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+CLcKNmBtQ8bwvBOprKaTTFWe2lPpNVUj8Ip3FBRwNJqD+z4+II" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
